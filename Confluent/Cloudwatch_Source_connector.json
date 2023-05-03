@@ -1,0 +1,18 @@
+{
+    "name": "CWSourceConnector",
+    "config": {
+        "connector.class": "CloudWatchLogsSource",
+        "name": "CWSourceConnector",
+        "kafka.auth.mode": "KAFKA_API_KEY",
+        "kafka.api.key": "************",
+        "kafka.api.secret": "****************************************************************",
+        "kafka.topic.format": "${log-group}.${log-stream}",
+        "output.data.format": "JSON",
+        "aws.access.key.id": "********************",
+        "aws.secret.access.key": "****************************************",
+        "aws.cloudwatch.logs.url": "https://logs.ap-south-1.amazonaws.com/",
+        "aws.cloudwatch.log.group": "cloudwatchLogsEC2",
+        "aws.poll.interval.ms": "1000",
+        "tasks.max": "1"
+    }
+}

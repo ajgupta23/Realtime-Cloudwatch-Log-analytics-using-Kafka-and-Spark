@@ -99,7 +99,7 @@ https://app.diagrams.net/#G1yjTUHxNf16MXb53skABiWsAe6v33GpZg
     NOTE - After instance restart run the following commands:
     sudo service httpd start
     sudo systemctl start awslogsd
-Public IP of the server: http://43.204.32.119/
+Public IP of the server: http://13.126.116.49/
 
 ## Amazon CloudWatch Logs Source connector
 1. Provide Kafka and AWS Keys.

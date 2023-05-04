@@ -1,5 +1,5 @@
-# Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark-Streaming
-Cloudwatch Log analytics using Kafka (via Confluent) and Spark streaming (via Databricks)
+# Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark
+Cloudwatch Log analytics using Kafka (via Confluent) and Spark (via Databricks)
 
 https://app.diagrams.net/#G1yjTUHxNf16MXb53skABiWsAe6v33GpZg
 

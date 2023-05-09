@@ -1,5 +1,5 @@
-# Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark-Streaming
-Cloudwatch Log analytics using Kafka (via Confluent) and Spark streaming (via Databricks)
+# Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark
+Cloudwatch Log analytics using Kafka (via Confluent) and Spark (via Databricks)
 
 ## Solution architecture
 
@@ -101,7 +101,7 @@ Cloudwatch Log analytics using Kafka (via Confluent) and Spark streaming (via Da
     NOTE - After instance restart run the following commands:
     sudo service httpd start
     sudo systemctl start awslogsd
-Public IP of the server: http://43.204.32.119/
+Public IP of the server: http://13.126.116.49/
 
 ## Amazon CloudWatch Logs Source connector
 1. Provide Kafka and AWS Keys.

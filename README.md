@@ -1,7 +1,9 @@
 # Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark-Streaming
 Cloudwatch Log analytics using Kafka (via Confluent) and Spark streaming (via Databricks)
 
-https://app.diagrams.net/#G1yjTUHxNf16MXb53skABiWsAe6v33GpZg
+## Solution architecture
+
+![images/Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark-Streaming.drawio.png](images/Realtime-Cloudwatch-Log-analytics-using-Kafka-and-Spark-Streaming.drawio.png)
 
 ## Source Configuration
 1. Create an EC2 Role with access to Cloudwatch. We will use this as instance profile for our EC2 instance.

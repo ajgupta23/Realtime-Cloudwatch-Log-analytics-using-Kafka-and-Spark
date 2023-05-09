@@ -1,5 +1,5 @@
   %sql
--- Analysis 1, browser type
+-------------------- Analysis 1, browser type --------------------
 create or replace table cloudwatch_logs_analytics.browsers as
 select
   case
@@ -15,7 +15,7 @@ group by
   1;
 
 %sql
--- Analysis 2, requests by country
+-------------------- Analysis 2, requests by country --------------------
 create
 or replace table cloudwatch_logs_analytics.requests_by_country as
 select
@@ -31,7 +31,7 @@ limit
   10;
 
 %sql
--- Analysis 3, most requests from IP and total response size
+-------------------- Analysis 3, most requests from IP and total response size --------------------
 create or replace table cloudwatch_logs_analytics.requests_by_response_size as
 SELECT
   COUNT(*) as request_count,
@@ -53,7 +53,7 @@ order by
   response_size_in_kb desc;
 
 %sql
--- Analysis 4, Number of failed requests
+-------------------- Analysis 4, Number of failed requests --------------------
 create or replace table cloudwatch_logs_analytics.failed_requests_type as
 select
   status_code,
@@ -66,7 +66,7 @@ GROUP BY
   status_code
 
 %sql
--- Analysis 5, number of requests made per day
+-------------------- Analysis 5, number of requests made per day --------------------
 create
 or replace table cloudwatch_logs_analytics.requests_per_day as
 SELECT
@@ -80,7 +80,7 @@ ORDER BY
   request_date;
 
 %sql
--- Analysis 6, which time of day receives most traffic
+-------------------- Analysis 6, which time of day receives most traffic --------------------
 create
 or replace table cloudwatch_logs_analytics.requests_each_day as
 SELECT
@@ -103,7 +103,7 @@ ORDER BY
   requests DESC;
 
 %sql
--- Analysis 7, total_requests
+-------------------- Analysis 7, total_requests --------------------
 create
 or replace table cloudwatch_logs_analytics.total_requests_count as
 select
@@ -112,7 +112,7 @@ from
   cloudwatch_logs_analytics.server_logs_transformed;
 
 %sql
--- Analysis 8, failed_requests
+-------------------- Analysis 8, failed_requests --------------------
 create
 or replace table cloudwatch_logs_analytics.failed_requests_count as
 select
@@ -123,7 +123,7 @@ where
   status_code <> 200;
 
 %sql
--- Analysis 9, data_served
+-------------------- Analysis 9, data_served --------------------
 create
 or replace table cloudwatch_logs_analytics.data_served as
 select
